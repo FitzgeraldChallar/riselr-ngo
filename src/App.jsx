@@ -5,12 +5,12 @@ import Footer from "./components/layout/Footer";
 
 import Home from "./pages/Home";
 
-import WhoWeAre from "./pages/about/WhoWeAre";
-import MissionVision from "./pages/about/MissionVision";
-import Leadership from "./pages/about/Leadership";
-import Team from "./pages/about/Team";
-import Partners from "./pages/about/Partners";
-import Impact from "./pages/about/Impact";
+import WhoWeAre from "./pages/About/WhoWeAre";
+import MissionVision from "./pages/About/MissionVision";
+import Leadership from "./pages/About/Leadership";
+import Team from "./pages/About/Team";
+import Partners from "./pages/About/Partners";
+import Impact from "./pages/About/Impact";
 
 export default function App() {
   return (
