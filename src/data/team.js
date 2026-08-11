@@ -17,16 +17,11 @@ export const team = [
     position: "Environmental Manager",
     image: "/images/team-3.jpg",
   },
+  
   {
     id: 4,
-    name: "Emmanuel Tamba",
-    position: "Geotechnical Manager",
-    image: "/images/team-4.jpg",
-  },
-  {
-    id: 5,
     name: "Ezekiel Korlubah",
     position: "Senior Agriculturist / Soil Scientist",
-    image: "/images/team-5.jpg",
+    image: "/images/team-4.jpg",
   },
 ];
