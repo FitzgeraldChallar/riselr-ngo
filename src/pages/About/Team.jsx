@@ -27,7 +27,7 @@ export default function Team() {
 
         {/* Soft Gradient Overlay */}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-white/35 via-[#EAF5E8]/20 to-white/30"
+          className="absolute inset-0 bg-linear-to-r from-white/35 via-[#EAF5E8]/20 to-white/30"
           aria-hidden="true"
         />
 

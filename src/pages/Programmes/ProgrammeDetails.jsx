@@ -1,4 +1,9 @@
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  CheckCircle2,
+  UsersRound,
+} from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { programmes } from "../../data/programmes";
 
@@ -19,13 +24,17 @@ export default function ProgrammeDetails() {
             Programme
           </p>
 
-          <h1 className="mt-3 font-['Manrope'] text-3xl font-extrabold text-[#17231A]">
+          <h1 className="mt-4 font-['Manrope'] text-3xl font-extrabold text-[#17231A]">
             Programme not found
           </h1>
 
+          <p className="mt-4 text-gray-600">
+            The programme you are looking for could not be found.
+          </p>
+
           <Link
             to="/programmes"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#2E7D32] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#245F28]"
+            className="mt-7 inline-flex items-center gap-2 rounded-full bg-[#173B22] px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             <ArrowLeft size={16} />
             Back to Programmes
@@ -44,196 +53,219 @@ export default function ProgrammeDetails() {
       : null;
 
   return (
-    <main>
+    <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#17231A]">
-        <div className="absolute inset-0">
-          <img
-            src={programme.image}
-            alt={programme.title}
-            className="h-full w-full object-cover opacity-30"
-          />
+      <section className="relative min-h-[58vh] overflow-hidden">
+        <img
+          src={programme.image}
+          alt={programme.title}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
-          <div className="absolute inset-0 bg-linear-to-r from-[#17231A] via-[#17231A]/90 to-[#17231A]/40" />
-        </div>
+        <div className="absolute inset-0 bg-[#173B22]/75" />
 
-        <div className="relative mx-auto max-w-350 px-5 py-24 sm:px-8 sm:py-28 lg:px-10 lg:py-32">
-          <div className="max-w-4xl">
-            <div className="flex items-center gap-4">
-              <span className="text-sm font-bold tracking-[0.2em] text-[#8BC34A]">
-                {programme.number}
-              </span>
+        <div className="relative mx-auto flex min-h-[58vh] max-w-350 items-end px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
+          <div className="max-w-4xl text-white">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#B9DC7A]">
+              Programme {programme.number}
+            </p>
 
-              <span className="h-px w-12 bg-[#8BC34A]" />
-
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/70">
-                RISE Programme
-              </span>
-            </div>
-
-            <h1 className="mt-6 font-['Manrope'] text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 font-['Manrope'] text-4xl font-extrabold leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
               {programme.title}
             </h1>
 
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">
-              {programme.shortTitle}
+            <p className="mt-6 max-w-3xl text-lg font-medium italic leading-8 text-white/85 sm:text-xl">
+              {programme.tagline}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* Programme Objective */}
       <section className="py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto grid max-w-350 gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-10 lg:gap-20">
+        <div className="mx-auto grid max-w-350 gap-12 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-10">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#2E7D32]">
-              About this programme
+              Programme Objective
             </p>
 
-            <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold leading-tight text-[#17231A] sm:text-4xl">
-              Creating practical solutions for sustainable development.
+            <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold leading-tight tracking-[-0.03em] text-[#17231A] sm:text-4xl">
+              What we aim to achieve.
             </h2>
-
-            <p className="mt-6 text-base leading-8 text-gray-600">
-              {programme.description}
-            </p>
-
-            <p className="mt-5 text-base leading-8 text-gray-600">
-              Through locally informed approaches, technical expertise, and
-              meaningful partnerships, RISE works to translate knowledge into
-              practical action that benefits communities, institutions, and
-              the environment.
-            </p>
           </div>
 
-          {/* Image */}
-          <div className="overflow-hidden rounded-3xl bg-[#EAF2EA]">
-            <img
-              src={programme.image}
-              alt={programme.title}
-              className="h-full min-h-80 w-full object-cover"
-            />
+          <div>
+            <p className="text-lg leading-9 text-gray-600">
+              {programme.objective}
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Programme Areas */}
-      <section className="bg-[#F5F9F5] py-20 sm:py-24 lg:py-28">
+      {/* Our Focus */}
+      <section className="bg-[#F4F8F3] py-20 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-350 px-5 sm:px-8 lg:px-10">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#2E7D32]">
-              Programme Areas
+              Our Focus
             </p>
 
-            <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold text-[#17231A] sm:text-4xl">
-              Areas of focus
+            <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold tracking-[-0.03em] text-[#17231A] sm:text-4xl">
+              Areas where we concentrate our efforts.
             </h2>
-
-            <p className="mt-5 text-base leading-8 text-gray-600">
-              Our work focuses on practical interventions that respond to
-              Liberia's environmental, climate, livelihood, and development
-              priorities.
-            </p>
           </div>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {programme.programmeAreas.map((area) => (
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
+            {programme.focus.map((item, index) => (
               <div
-                key={area}
-                className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
+                key={item}
+                className="flex items-start gap-4 rounded-2xl border border-[#DCE8DB] bg-white p-6"
               >
-                <CheckCircle2
-                  size={21}
-                  className="mt-0.5 shrink-0 text-[#2E7D32]"
-                  strokeWidth={2}
-                />
-
-                <span className="text-sm font-medium leading-6 text-[#374151]">
-                  {area}
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#EAF2EA] text-xs font-bold text-[#2E7D32]">
+                  {String(index + 1).padStart(2, "0")}
                 </span>
+
+                <p className="text-sm leading-7 text-gray-600">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* What We Do */}
+      {/* What This May Include */}
       <section className="py-20 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-350 px-5 sm:px-8 lg:px-10">
-          <div className="rounded-3xl bg-[#2E7D32] px-7 py-12 text-white sm:px-12 sm:py-16 lg:px-16">
-            <div className="max-w-3xl">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60">
-                What we do
+          <div className="max-w-2xl">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#2E7D32]">
+              What This May Include
+            </p>
+
+            <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold tracking-[-0.03em] text-[#17231A] sm:text-4xl">
+              Turning priorities into practical action.
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {programme.activities.map((activity) => (
+              <div
+                key={activity}
+                className="rounded-2xl border border-gray-100 bg-white p-7 shadow-sm"
+              >
+                <CheckCircle2
+                  size={22}
+                  className="text-[#2E7D32]"
+                  strokeWidth={2}
+                />
+
+                <p className="mt-4 text-sm leading-7 text-gray-600">
+                  {activity}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Change We Seek */}
+      <section className="bg-[#173B22] py-20 sm:py-24 lg:py-28">
+        <div className="mx-auto max-w-250 px-5 text-center sm:px-8">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B9DC7A]">
+            The Change We Seek
+          </p>
+
+          <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold tracking-[-0.03em] text-white sm:text-4xl">
+            Creating lasting, measurable change.
+          </h2>
+
+          <p className="mt-7 text-lg leading-9 text-white/75">
+            {programme.change}
+          </p>
+        </div>
+      </section>
+
+      {/* Who We Work With */}
+      <section className="py-20 sm:py-24 lg:py-28">
+        <div className="mx-auto max-w-350 px-5 sm:px-8 lg:px-10">
+          <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
+            <div>
+              <UsersRound size={34} className="text-[#2E7D32]" />
+
+              <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-[#2E7D32]">
+                Who We Work With
               </p>
 
-              <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold sm:text-4xl">
-                Turning knowledge into action.
+              <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold tracking-[-0.03em] text-[#17231A] sm:text-4xl">
+                Partnerships that make change possible.
               </h2>
+            </div>
 
-              <p className="mt-6 text-base leading-8 text-white/80 sm:text-lg">
-                {programme.whatWeDo}
-              </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {programme.partners.map((partner) => (
+                <div
+                  key={partner}
+                  className="rounded-xl bg-[#F4F8F3] px-5 py-4 text-sm font-medium text-[#31513A]"
+                >
+                  {partner}
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Programme Navigation */}
-      <section className="border-t border-gray-100 bg-white">
-        <div className="mx-auto flex max-w-350 flex-col gap-6 px-5 py-10 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+      <section className="border-t border-gray-100 bg-[#FAFCFA] py-10">
+        <div className="mx-auto flex max-w-350 flex-col gap-5 px-5 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
           {previousProgramme ? (
             <Link
               to={`/programmes/${previousProgramme.slug}`}
-              className="group flex items-center gap-4"
+              className="group flex items-center gap-3 text-sm font-semibold text-[#173B22]"
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 transition-colors group-hover:border-[#2E7D32] group-hover:bg-[#EAF2EA]">
-                <ArrowLeft
-                  size={18}
-                  className="text-gray-500 group-hover:text-[#2E7D32]"
-                />
-              </div>
+              <ArrowLeft
+                size={18}
+                className="transition-transform group-hover:-translate-x-1"
+              />
 
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                  Previous programme
-                </p>
-
-                <p className="mt-1 text-sm font-bold text-[#17231A]">
-                  {previousProgramme.title}
-                </p>
-              </div>
+              <span>
+                Previous
+                <span className="ml-2 text-gray-500">
+                  Programme {previousProgramme.number}
+                </span>
+              </span>
             </Link>
           ) : (
             <div />
           )}
 
+          <Link
+            to="/programmes"
+            className="text-sm font-bold text-[#2E7D32] hover:underline"
+          >
+            All Programmes
+          </Link>
+
           {nextProgramme ? (
             <Link
               to={`/programmes/${nextProgramme.slug}`}
-              className="group flex items-center justify-end gap-4 text-right"
+              className="group flex items-center justify-end gap-3 text-sm font-semibold text-[#173B22]"
             >
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                  Next programme
-                </p>
+              <span>
+                Next
+                <span className="ml-2 text-gray-500">
+                  Programme {nextProgramme.number}
+                </span>
+              </span>
 
-                <p className="mt-1 text-sm font-bold text-[#17231A]">
-                  {nextProgramme.title}
-                </p>
-              </div>
-
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 transition-colors group-hover:border-[#2E7D32] group-hover:bg-[#EAF2EA]">
-                <ArrowRight
-                  size={18}
-                  className="text-gray-500 group-hover:text-[#2E7D32]"
-                />
-              </div>
+              <ArrowRight
+                size={18}
+                className="transition-transform group-hover:translate-x-1"
+              />
             </Link>
           ) : (
             <div />
           )}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

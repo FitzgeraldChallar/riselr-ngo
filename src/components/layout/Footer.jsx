@@ -92,55 +92,55 @@ export default function Footer() {
           </div>
 
           {/* Programmes */}
-          <div>
-            <h3 className="font-['Manrope'] text-sm font-bold uppercase tracking-wider">
-              Programmes
-            </h3>
+<div>
+  <h3 className="font-['Manrope'] text-sm font-bold uppercase tracking-wider">
+    Programmes
+  </h3>
 
-            <div className="mt-5 space-y-3">
-              <Link
-                to="/programmes/climate-resilience"
-                className="block text-sm text-white/65 transition-colors hover:text-white"
-              >
-                Climate & Resilience
-              </Link>
+  <div className="mt-5 space-y-3">
+    <Link
+      to="/programmes/forests-biodiversity-natural-resource-governance"
+      className="block text-sm text-white/65 transition-colors hover:text-white"
+    >
+      Forests, Biodiversity & Natural Resource Governance
+    </Link>
 
-              <Link
-                to="/programmes/sustainable-agriculture"
-                className="block text-sm text-white/65 transition-colors hover:text-white"
-              >
-                Sustainable Agriculture & Livelihoods
-              </Link>
+    <Link
+      to="/programmes/climate-action-community-resilience"
+      className="block text-sm text-white/65 transition-colors hover:text-white"
+    >
+      Climate Action & Community Resilience
+    </Link>
 
-              <Link
-                to="/programmes/nature-biodiversity"
-                className="block text-sm text-white/65 transition-colors hover:text-white"
-              >
-                Nature & Biodiversity
-              </Link>
+    <Link
+      to="/programmes/climate-smart-agriculture-food-systems-livelihoods"
+      className="block text-sm text-white/65 transition-colors hover:text-white"
+    >
+      Climate-Smart Agriculture, Food Systems & Livelihoods
+    </Link>
 
-              <Link
-                to="/programmes/natural-resources-governance"
-                className="block text-sm text-white/65 transition-colors hover:text-white"
-              >
-                Natural Resources & Governance
-              </Link>
+    <Link
+      to="/programmes/environmental-education-youth-community-leadership"
+      className="block text-sm text-white/65 transition-colors hover:text-white"
+    >
+      Environmental Education, Youth & Community Leadership
+    </Link>
 
-              <Link
-                to="/programmes/green-energy-circular-economy"
-                className="block text-sm text-white/65 transition-colors hover:text-white"
-              >
-                Green Energy & Circular Economy
-              </Link>
+    <Link
+      to="/programmes/research-evidence-policy-influence"
+      className="block text-sm text-white/65 transition-colors hover:text-white"
+    >
+      Research, Evidence & Policy Influence
+    </Link>
 
-              <Link
-                to="/programmes/knowledge-youth-community"
-                className="block text-sm text-white/65 transition-colors hover:text-white"
-              >
-                Knowledge, Youth & Community Development
-              </Link>
-            </div>
-          </div>
+    <Link
+      to="/programmes/circular-economy-waste-inclusive-green-energy"
+      className="block text-sm text-white/65 transition-colors hover:text-white"
+    >
+      Circular Economy, Waste & Inclusive Green Energy
+    </Link>
+  </div>
+</div>
 
           {/* Contact */}
           <div>
