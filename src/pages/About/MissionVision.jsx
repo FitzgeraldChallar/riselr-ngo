@@ -18,9 +18,7 @@ export default function MissionVision() {
               </p>
 
               <h2 className="mt-7 font-['Manrope'] text-3xl font-extrabold leading-tight sm:text-4xl">
-                To deliver measurable, innovative, science-based consulting
-                and engineering solutions that advance sustainable development
-                and meet international best practice.
+                 RISE works with communities, young people, public institutions, researchers and partners to protect and restore ecosystems, strengthen climate resilience, improve sustainable livelihoods, and turn evidence into inclusive action and accountable natural-resource governance.
               </h2>
             </div>
 
@@ -31,8 +29,7 @@ export default function MissionVision() {
               </p>
 
               <h2 className="mt-7 font-['Manrope'] text-3xl font-extrabold leading-tight text-[#17231A] sm:text-4xl">
-                To see a climate-resilient environment, where people and
-                ecosystems thrive together in balance.
+                A just, climate-resilient Liberia where people prosper within healthy ecosystems and natural resources are governed for the common good.
               </h2>
             </div>
           </div>

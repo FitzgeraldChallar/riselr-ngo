@@ -10,34 +10,62 @@ export default function WhoWeAre() {
       image={aboutImages.whoWeAre}
     >
       {/* Introduction */}
-      <section className="py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto grid max-w-350 gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-10">
+      <section className="relative overflow-hidden py-20 sm:py-24 lg:py-28">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${aboutImages.whoWeAre})`,
+          }}
+          aria-hidden="true"
+        />
+
+        {/* Light Green Overlay */}
+        <div
+          className="absolute inset-0 bg-[#DDEEDC]/90"
+          aria-hidden="true"
+        />
+
+        {/* Additional soft white overlay for readability */}
+        <div
+          className="absolute inset-0 bg-linear-to-r from-white/35 via-[#EAF5E8]/20 to-white/30"
+          aria-hidden="true"
+        />
+
+        {/* Content */}
+        <div className="relative z-10 mx-auto grid max-w-350 gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-10">
+          {/* Heading */}
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#2E7D32]">
               About RISE
             </p>
 
-            <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold leading-tight tracking-[-0.03em] text-[#17231A] sm:text-4xl">
+            <h2 className="mt-4 font-['Manrope'] text-3xl font-extrabold leading-tight tracking-[-0.03em] text-[#17231A] sm:text-4xl lg:text-5xl">
               Bridging global knowledge with local action.
             </h2>
+
+            <div className="mt-6 h-1 w-16 rounded-full bg-[#2E7D32]" />
           </div>
 
-          <div className="space-y-5 text-base leading-8 text-gray-600">
-            <p>
-              RISE is a Liberian-led, non-profit, environmental and climate
-              governance organization committed to advancing sustainable
-              natural resource management, climate change adaptation, waste
-              management, geotechnical solutions to environmental and
-              development initiatives, alternative energy, and environmental
-              justice across Liberia and the world.
-            </p>
+          {/* Description */}
+          <div className="rounded-2xl border border-white/50 bg-white/55 p-7 shadow-sm backdrop-blur-[2px] sm:p-8">
+            <div className="space-y-5 text-base leading-8 text-[#374151]">
+              <p>
+                RISE is a Liberian-led, non-profit, environmental and climate
+                governance organization committed to advancing sustainable
+                natural resource management, climate change adaptation, waste
+                management, geotechnical solutions to environmental and
+                development initiatives, alternative energy, and environmental
+                justice across Liberia and the world.
+              </p>
 
-            <p>
-              RISE is founded by a network of highly experienced Liberian
-              professionals who have served with international development
-              institutions including the European Union, World Bank, United
-              Nations, UNDP, and key government ministries and agencies.
-            </p>
+              <p>
+                RISE is founded by a network of highly experienced Liberian
+                professionals who have served with international development
+                institutions including the European Union, World Bank, United
+                Nations, UNDP, and key government ministries and agencies.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -129,7 +157,10 @@ export default function WhoWeAre() {
           </div>
 
           <div className="flex items-start gap-3 text-sm text-white/70">
-            <MapPin size={18} className="mt-1 shrink-0 text-[#B9DC7A]" />
+            <MapPin
+              size={18}
+              className="mt-1 shrink-0 text-[#B9DC7A]"
+            />
 
             <span>
               72nd Junction, Behind the Viewpoint Entertainment Center,

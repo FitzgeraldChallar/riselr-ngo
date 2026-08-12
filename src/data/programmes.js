@@ -1,14 +1,15 @@
 export const programmes = [
   {
-    id: "01",
     slug: "climate-resilience",
+    number: "01",
     title: "Climate & Resilience",
-    tagline: "Preparing communities for a changing climate",
+    shortTitle: "Preparing communities for a changing climate",
     description:
       "RISE supports communities and institutions to understand climate risks, strengthen resilience, and develop practical adaptation solutions.",
-    image: "/images/rise-programme-climate.jpg",
 
-    areas: [
+    image: "/images/programmes/climate-resilience.jpg",
+
+    programmeAreas: [
       "Climate adaptation",
       "Community resilience",
       "Disaster risk reduction",
@@ -23,15 +24,16 @@ export const programmes = [
   },
 
   {
-    id: "02",
-    slug: "sustainable-agriculture-livelihoods",
+    slug: "sustainable-agriculture",
+    number: "02",
     title: "Sustainable Agriculture & Livelihoods",
-    tagline: "Growing food. Strengthening livelihoods. Building resilience.",
+    shortTitle: "Growing food. Strengthening livelihoods. Building resilience.",
     description:
       "RISE promotes sustainable agricultural systems that improve food security, strengthen livelihoods, restore soil health, and help communities adapt to climate change.",
-    image: "/images/rise-programme-agriculture.jpg",
 
-    areas: [
+    image: "/images/programmes/sustainable-agriculture.jpg",
+
+    programmeAreas: [
       "Climate-smart agriculture",
       "Agroforestry",
       "Sustainable soil management",
@@ -39,7 +41,7 @@ export const programmes = [
       "Agribusiness",
       "Farmer training",
       "Youth and women in agriculture",
-      "Fisheries and animal health and science",
+      "Fishes and animal health and science",
     ],
 
     whatWeDo:
@@ -47,15 +49,16 @@ export const programmes = [
   },
 
   {
-    id: "03",
     slug: "nature-biodiversity",
+    number: "03",
     title: "Nature & Biodiversity",
-    tagline: "Protecting nature. Restoring ecosystems. Sustaining life.",
+    shortTitle: "Protecting nature. Restoring ecosystems. Sustaining life.",
     description:
       "Healthy ecosystems are essential for food, water, climate resilience, biodiversity, and livelihoods. RISE works to protect biodiversity and restore degraded ecosystems while strengthening community stewardship of natural resources.",
-    image: "/images/rise-programme-biodiversity.jpg",
 
-    areas: [
+    image: "/images/programmes/nature-biodiversity.jpg",
+
+    programmeAreas: [
       "Ecosystem restoration",
       "Biodiversity conservation",
       "Forest restoration",
@@ -71,20 +74,21 @@ export const programmes = [
   },
 
   {
-    id: "04",
     slug: "natural-resources-governance",
+    number: "04",
     title: "Natural Resources & Governance",
-    tagline: "Promoting responsible resource management",
+    shortTitle: "Promoting responsible resource management",
     description:
       "Liberia's forests, minerals, land, water, and coastal resources are critical to national development. RISE promotes approaches that balance economic development with environmental protection and community interests.",
-    image: "/images/rise-programme-governance.jpg",
 
-    areas: [
-      "Resource-dependent livelihoods",
-      "Coastal & marine resources",
-      "Natural resource policy",
-      "Environmental governance",
-      "Land & water management",
+    image: "/images/programmes/natural-resources-governance.jpg",
+
+    programmeAreas: [
+      "Resource-Dependent Livelihoods",
+      "Coastal & Marine Resources",
+      "Natural Resource Policy",
+      "Environmental Governance",
+      "Land & Water Management",
     ],
 
     whatWeDo:
@@ -92,15 +96,16 @@ export const programmes = [
   },
 
   {
-    id: "05",
     slug: "green-energy-circular-economy",
+    number: "05",
     title: "Green Energy & Circular Economy",
-    tagline: "Advancing clean energy and responsible resource use",
+    shortTitle: "Advancing clean energy and responsible resource use",
     description:
       "RISE promotes practical solutions that reduce environmental pressures while expanding access to clean energy and creating green economic opportunities.",
-    image: "/images/rise-programme-energy.jpg",
 
-    areas: [
+    image: "/images/programmes/green-energy.jpg",
+
+    programmeAreas: [
       "Solar energy",
       "Renewable energy",
       "Energy access",
@@ -116,15 +121,16 @@ export const programmes = [
   },
 
   {
-    id: "06",
-    slug: "knowledge-youth-community-development",
+    slug: "knowledge-youth-community",
+    number: "06",
     title: "Knowledge, Youth & Community Development",
-    tagline: "Empowering people to create sustainable change",
+    shortTitle: "Empowering people to create sustainable change",
     description:
       "Knowledge is one of the most powerful tools for sustainable development. RISE works with young people, communities, institutions, and local organizations to develop knowledge, skills, leadership, and opportunities for meaningful participation.",
-    image: "/images/rise-programme-youth.jpg",
 
-    areas: [
+    image: "/images/programmes/knowledge-youth.jpg",
+
+    programmeAreas: [
       "Environmental education",
       "Youth leadership",
       "Women's empowerment",

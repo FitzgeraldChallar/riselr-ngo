@@ -62,6 +62,13 @@ export default function Footer() {
               </Link>
 
               <Link
+                to="/about/leadership"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Leadership
+              </Link>
+
+              <Link
                 to="/about/team"
                 className="block text-sm text-white/65 transition-colors hover:text-white"
               >
@@ -73,6 +80,13 @@ export default function Footer() {
                 className="block text-sm text-white/65 transition-colors hover:text-white"
               >
                 Our Partners
+              </Link>
+
+              <Link
+                to="/about/impact"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Our Impact
               </Link>
             </div>
           </div>
@@ -88,28 +102,42 @@ export default function Footer() {
                 to="/programmes/climate-resilience"
                 className="block text-sm text-white/65 transition-colors hover:text-white"
               >
-                Climate Resilience
+                Climate & Resilience
               </Link>
 
               <Link
-                to="/programmes/environmental-governance"
+                to="/programmes/sustainable-agriculture"
                 className="block text-sm text-white/65 transition-colors hover:text-white"
               >
-                Environmental Governance
+                Sustainable Agriculture & Livelihoods
               </Link>
 
               <Link
-                to="/programmes/resource-management"
+                to="/programmes/nature-biodiversity"
                 className="block text-sm text-white/65 transition-colors hover:text-white"
               >
-                Resource Management
+                Nature & Biodiversity
               </Link>
 
               <Link
-                to="/programmes/community-empowerment"
+                to="/programmes/natural-resources-governance"
                 className="block text-sm text-white/65 transition-colors hover:text-white"
               >
-                Community Empowerment
+                Natural Resources & Governance
+              </Link>
+
+              <Link
+                to="/programmes/green-energy-circular-economy"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Green Energy & Circular Economy
+              </Link>
+
+              <Link
+                to="/programmes/knowledge-youth-community"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Knowledge, Youth & Community Development
               </Link>
             </div>
           </div>
@@ -123,18 +151,22 @@ export default function Footer() {
             <div className="mt-5 space-y-4 text-sm text-white/65">
               <div className="flex items-start gap-3">
                 <MapPin size={17} className="mt-0.5 shrink-0" />
-                <span>72nd Junction, Behind the Viewpoint Entertainment Center,
-                       Paynesville City, Montserrado County, Liberia
+
+                <span>
+                  72nd Junction, Behind the Viewpoint Entertainment Center,
+                  Paynesville City, Montserrado County, Liberia
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Phone size={17} className="shrink-0" />
+
                 <span>+231 77 515 2637</span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail size={17} className="shrink-0" />
+
                 <span>alexander@rise-lr.org</span>
               </div>
             </div>

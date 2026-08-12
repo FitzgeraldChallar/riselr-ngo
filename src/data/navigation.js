@@ -12,34 +12,34 @@ export const navigation = [
   },
 
   {
-    label: "Programmes",
-    dropdown: [
-      {
-        label: "Climate & Resilience",
-        path: "/programmes/climate-resilience",
-      },
-      {
-        label: "Sustainable Agriculture & Livelihoods",
-        path: "/programmes/sustainable-agriculture-livelihoods",
-      },
-      {
-        label: "Nature & Biodiversity",
-        path: "/programmes/nature-biodiversity",
-      },
-      {
-        label: "Natural Resources & Governance",
-        path: "/programmes/natural-resources-governance",
-      },
-      {
-        label: "Green Energy & Circular Economy",
-        path: "/programmes/green-energy-circular-economy",
-      },
-      {
-        label: "Knowledge, Youth & Community Development",
-        path: "/programmes/knowledge-youth-community-development",
-      },
-    ],
-  },
+  label: "Programmes",
+  dropdown: [
+    {
+      label: "Climate & Resilience",
+      path: "/programmes/climate-resilience",
+    },
+    {
+      label: "Sustainable Agriculture & Livelihoods",
+      path: "/programmes/sustainable-agriculture",
+    },
+    {
+      label: "Nature & Biodiversity",
+      path: "/programmes/nature-biodiversity",
+    },
+    {
+      label: "Natural Resources & Governance",
+      path: "/programmes/natural-resources-governance",
+    },
+    {
+      label: "Green Energy & Circular Economy",
+      path: "/programmes/green-energy-circular-economy",
+    },
+    {
+      label: "Knowledge, Youth & Community Development",
+      path: "/programmes/knowledge-youth-community",
+    },
+  ],
+},
 
   {
     label: "Media",

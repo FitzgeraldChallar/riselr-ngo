@@ -11,10 +11,15 @@ import Leadership from "./pages/About/Leadership";
 import Team from "./pages/About/Team";
 import Partners from "./pages/About/Partners";
 import Impact from "./pages/About/Impact";
+import ScrollToTop from "./components/layout/ScrollToTop";
+import Contact from "./pages/Contact";
+
+import ProgrammeDetails from "./pages/Programmes/ProgrammeDetails";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Navbar />
 
@@ -33,6 +38,11 @@ export default function App() {
             <Route path="/about/team" element={<Team />} />
             <Route path="/about/partners" element={<Partners />} />
             <Route path="/about/impact" element={<Impact />} />
+            <Route
+              path="/programmes/:slug"
+              element={<ProgrammeDetails />}
+            />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 

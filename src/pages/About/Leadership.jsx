@@ -45,10 +45,7 @@ export default function Leadership() {
             </h2>
 
             <p className="mt-5 text-base leading-8 text-gray-600">
-              RISE is founded and led by experienced Liberian professionals
-              with backgrounds spanning international development,
-              environmental governance, engineering, research, and public
-              institutions.
+             Our team brings together Liberian expertise and lived experience across environmental management, community development, agriculture, education, research, monitoring and organizational leadership. We value interdisciplinary work, ethical practice and the ability to translate knowledge into useful action.
             </p>
           </div>
 
