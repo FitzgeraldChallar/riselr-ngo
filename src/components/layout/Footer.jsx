@@ -6,7 +6,10 @@ export default function Footer() {
     <footer className="bg-[#173B22] text-white">
       <div className="mx-auto max-w-350 px-5 py-14 sm:px-8 lg:px-10">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
+
+          {/* =========================================================
+              BRAND
+          ========================================================= */}
           <div>
             <div className="font-['Manrope'] text-3xl font-extrabold">
               RISE
@@ -40,7 +43,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* About */}
+          {/* =========================================================
+              ABOUT
+          ========================================================= */}
           <div>
             <h3 className="font-['Manrope'] text-sm font-bold uppercase tracking-wider">
               About RISE
@@ -91,58 +96,62 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Programmes */}
-<div>
-  <h3 className="font-['Manrope'] text-sm font-bold uppercase tracking-wider">
-    Programmes
-  </h3>
+          {/* =========================================================
+              PROGRAMMES
+          ========================================================= */}
+          <div>
+            <h3 className="font-['Manrope'] text-sm font-bold uppercase tracking-wider">
+              Programmes
+            </h3>
 
-  <div className="mt-5 space-y-3">
-    <Link
-      to="/programmes/forests-biodiversity-natural-resource-governance"
-      className="block text-sm text-white/65 transition-colors hover:text-white"
-    >
-      Forests, Biodiversity & Natural Resource Governance
-    </Link>
+            <div className="mt-5 space-y-3">
+              <Link
+                to="/programmes/forests-biodiversity-natural-resource-governance"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Forests, Biodiversity & Natural Resource Governance
+              </Link>
 
-    <Link
-      to="/programmes/climate-action-community-resilience"
-      className="block text-sm text-white/65 transition-colors hover:text-white"
-    >
-      Climate Action & Community Resilience
-    </Link>
+              <Link
+                to="/programmes/climate-action-community-resilience"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Climate Action & Community Resilience
+              </Link>
 
-    <Link
-      to="/programmes/climate-smart-agriculture-food-systems-livelihoods"
-      className="block text-sm text-white/65 transition-colors hover:text-white"
-    >
-      Climate-Smart Agriculture, Food Systems & Livelihoods
-    </Link>
+              <Link
+                to="/programmes/climate-smart-agriculture-food-systems-livelihoods"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Climate-Smart Agriculture, Food Systems & Livelihoods
+              </Link>
 
-    <Link
-      to="/programmes/environmental-education-youth-community-leadership"
-      className="block text-sm text-white/65 transition-colors hover:text-white"
-    >
-      Environmental Education, Youth & Community Leadership
-    </Link>
+              <Link
+                to="/programmes/environmental-education-youth-community-leadership"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Environmental Education, Youth & Community Leadership
+              </Link>
 
-    <Link
-      to="/programmes/research-evidence-policy-influence"
-      className="block text-sm text-white/65 transition-colors hover:text-white"
-    >
-      Research, Evidence & Policy Influence
-    </Link>
+              <Link
+                to="/programmes/research-evidence-policy-influence"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Research, Evidence & Policy Influence
+              </Link>
 
-    <Link
-      to="/programmes/circular-economy-waste-inclusive-green-energy"
-      className="block text-sm text-white/65 transition-colors hover:text-white"
-    >
-      Circular Economy, Waste & Inclusive Green Energy
-    </Link>
-  </div>
-</div>
+              <Link
+                to="/programmes/circular-economy-waste-inclusive-green-energy"
+                className="block text-sm text-white/65 transition-colors hover:text-white"
+              >
+                Circular Economy, Waste & Inclusive Green Energy
+              </Link>
+            </div>
+          </div>
 
-          {/* Contact */}
+          {/* =========================================================
+              CONTACT
+          ========================================================= */}
           <div>
             <h3 className="font-['Manrope'] text-sm font-bold uppercase tracking-wider">
               Contact Us
@@ -180,8 +189,40 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
-          © {new Date().getFullYear()} RISE Liberia. All rights reserved.
+        {/* =========================================================
+            BOTTOM / LEGAL
+        ========================================================= */}
+        <div className="mt-12 border-t border-white/10 pt-6">
+          <div className="flex flex-col gap-4 text-xs sm:flex-row sm:items-center sm:justify-between">
+
+            {/* Copyright */}
+            <p className="text-white/40">
+              © {new Date().getFullYear()} RISE Liberia. All rights reserved.
+            </p>
+
+            {/* Legal Documents */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+              <a
+                href="/documents/copyright-laws.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/50 transition-colors hover:text-white"
+              >
+                Copyright Laws
+              </a>
+
+              <span className="text-white/20">|</span>
+
+              <a
+                href="/documents/privacy-policy.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/50 transition-colors hover:text-white"
+              >
+                Privacy Policy
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
