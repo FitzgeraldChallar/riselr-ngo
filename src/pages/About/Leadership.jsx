@@ -5,7 +5,7 @@ import { aboutImages } from "../../data/about";
 const leaders = [
   {
     name: "Alexander G. Wrehyou",
-    role: "Founder & Senior Advisor - BSc, MSc, MSc(Hon), PGip, Cert",
+    role: "Founder & Senior Advisor - BSc, MSc, MSc(Hon), PGDip, Cert",
     image: "/images/rise-leader-1.jpg",
     version: "1",
   },

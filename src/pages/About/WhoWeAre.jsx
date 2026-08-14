@@ -98,19 +98,20 @@ export default function WhoWeAre() {
           <div className="rounded-2xl border border-white/50 bg-white/55 p-7 shadow-sm backdrop-blur-[2px] sm:p-8">
             <div className="space-y-5 text-base leading-8 text-[#374151]">
               <p>
-                RISE is a Liberian-led, non-profit, environmental and climate
-                governance organization committed to advancing sustainable
-                natural resource management, climate change adaptation, waste
-                management, geotechnical solutions to environmental and
-                development initiatives, alternative energy, and environmental
-                justice across Liberia and the world.
+                The Resilience Institute for Sustainability and Environment (RISE) is a Liberian-led nonprofit organization advancing environmental stewardship, 
+                climate resilience and inclusive development. 
+                We partner with communities, public institutions, civil society, 
+                researchers and responsible funders to conserve biodiversity, restore degraded 
+                landscapes, strengthen climate-smart agriculture and livelihoods, expand environmental education, produce useful evidence and
+                improve natural-resource governance.
               </p>
 
               <p>
-                RISE is founded by a network of highly experienced Liberian
-                professionals who have served with international development
-                institutions including the European Union, World Bank, United
-                Nations, UNDP, and key government ministries and agencies.
+                RISE works through participatory planning, 
+                practical demonstration, capacity development, 
+                ethical research and policy engagement. Our goal is a just, climate-resilient 
+                Liberia where people prosper within healthy ecosystems and natural resources are 
+                governed for the common good.
               </p>
             </div>
           </div>
